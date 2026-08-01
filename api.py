@@ -4,6 +4,7 @@ from models import Empleado
 
 api_bp = Blueprint("api", __name__, url_prefix="/api")
 
+# main
 
 @api_bp.route("/empleados", methods=["GET"])
 def listar_empleados_json():
