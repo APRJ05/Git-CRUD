@@ -23,3 +23,4 @@ class Empleado(db.Model):
             "salario": self.salario,
             "fecha_ingreso": fecha_formateada,
         }
+# main
