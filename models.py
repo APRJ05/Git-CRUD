@@ -15,7 +15,7 @@ class Empleado(db.Model):
     def to_dict(self):
         fecha_formateada = ""
         if self.fecha_ingreso:
-            fecha_formateada = self.fecha_ingreso.strftime("%Y/%m/%d")
+            fecha_formateada = self.fecha_ingreso.strftime("%Y/%m/%d") # bro?
 
         return {
             "id": self.id,
