@@ -1,6 +1,7 @@
 from datetime import date
 from database import db
 
+#qa approved :p
 
 class Empleado(db.Model):
     __tablename__ = "empleados"
@@ -14,7 +15,7 @@ class Empleado(db.Model):
     def to_dict(self):
         fecha_formateada = ""
         if self.fecha_ingreso:
-            fecha_formateada = self.fecha_ingreso.strftime("%d/%m/%Y")
+            fecha_formateada = self.fecha_ingreso.strftime("%Y/%m/%d")
 
         return {
             "id": self.id,
@@ -23,5 +24,6 @@ class Empleado(db.Model):
             "salario": self.salario,
             "fecha_ingreso": fecha_formateada,
         }
+# main
 
 # dev

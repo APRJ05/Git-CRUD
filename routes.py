@@ -56,9 +56,9 @@ def validar_datos_empleado(nombre, puesto, salario, fecha_ingreso):
     """Valida los datos del formulario de empleado. Devuelve una lista de errores."""
     errores = []
     if not nombre or len(nombre) < 2:
-        errores.append("El nombre debe tener al menos 2 caracteres.")
+        errores.append("El nombre debe tener al mínimo 2 caracteres.")
     if not puesto or len(puesto) < 2:
-        errores.append("El puesto debe tener al menos 2 caracteres.")
+        errores.append("El puesto debe tener al mínimo 2 caracteres.")
     try:
         if float(salario) <= 0:
             errores.append("El salario debe ser mayor que 0.")
