@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Iniciar sesión{% endblock %}
+{% block content %}
+    <h2>Iniciar sesión</h2>
+    <form method="POST">
+        <label>Usuario: <input type="text" name="usuario" required autofocus></label><br>
+        <label>Contraseña: <input type="password" name="password" required></label><br>
+        <button type="submit">Entrar</button>
+    </form>
+
+    <p style="color:#666;font-size:0.85em;">Demo: usuario <b>admin</b> / contraseña <b>admin123</b></p>
+{% endblock %}
+
+# Primer Intento

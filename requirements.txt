@@ -1,0 +1,4 @@
+Flask==3.0.3
+Flask-SQLAlchemy==3.1.1
+# Descomenta la siguiente línea solo si usarás SQL Server (DB_ENGINE=sqlserver):
+# pyodbc==5.1.0
