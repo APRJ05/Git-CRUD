@@ -17,6 +17,8 @@ def listar_empleados_json():
 def obtener_empleado_json(empleado_id):
     empleado = Empleado.query.get_or_404(empleado_id)
     return jsonify(empleado.to_dict())
+# lol cometi un pequeño error, eso es mental
+# viva Github Desktop 
 
 # Github desktop the best 
 # viva Github Desktop 
