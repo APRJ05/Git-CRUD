@@ -1,6 +1,7 @@
 from datetime import date
 from database import db
 
+#qa approved :p
 
 class Empleado(db.Model):
     __tablename__ = "empleados"
@@ -24,3 +25,5 @@ class Empleado(db.Model):
             "fecha_ingreso": fecha_formateada,
         }
 # main
+
+# dev
